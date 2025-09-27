@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Lecture 2 FSD Ch 2</title>
+    <link rel="icon" href="chatgpt.png" type="image/png" sizes="16x16">
+    <style>
+        pre {
+            font-size: 30px;
+        }
+
+        a {
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body link="blue" vlink="yellow" alink="green"> <!-- Customized link without CSS-->
+    <!-- 
+    HTML Link Tags <a> : anchor tag/ hyperlink tag
+    
+    Attributes of <a> tag:
+    href       : to provide the link/ url (complusory)
+    target     : to specify where to open the linked document
+        _self    : default, opens the link in the same tab
+        _blank   : opens the link in a new tab
+        _parent  : opens the link in the parent frame (out of syllabus)
+        _top     : opens the link in the full body of the window (out of syllabus)
+    -->
+
+    <h1>LINK TAG EXAMPLE</h1>
+    This is my second html program and this is nice.
+    <br>
+    <a href="https://www.google.com" target="_blank">Google</a>
+    <br>
+    <a href="https://www.youtube.com" target="_blank">YouTube</a>
+    <br>
+    <a href="chatgpt.png" target="_blank">ChatGPT Image</a>
+    <br>
+    <a href="Lec_1.html" target="_blank">Lecture 1</a>
+    <br>
+    <a href="Ghibli.png" target="_blank">Ghiblified Kavy</a>
+    <br>
+
+    <pre id="para1">
+            a
+            b
+            c
+            d
+            e
+            f
+            g
+            h
+            i
+            j
+            k
+            l
+            m
+            n
+            o
+            p
+            q
+            r
+            s
+            t
+            u
+            v
+            w
+            x
+            y
+            z
+        </pre>
+    <a href="#para1">Scroll to top</a>
+
+    <!-- 
+    MEDIA Tags
+    <img> : to insert images
+    Attributes of <img> tag:
+    src        : to provide the source of the image (complusory)
+    alt        : to provide alternative text if image is not found (complusory)
+    width      : to specify the width of the image
+    height     : to specify the height of the image
+    figure     : to group media content with caption
+    figurecaption : to provide caption for the media content
+    -->
+
+    <h2>Image Example</h2>
+    <img src="chatgpt.png" alt="ChatGPT Logo" width="200px" height="200px">
+    <br>
+    <figure>
+        <img src="Ghibli.png" alt="Ghiblified Kavy" width="470px" height="300px">
+        <figcaption>Ghiblified Kavy</figcaption>
+    </figure>
+    <br>
+
+    <!-- Write a code to generate a clickable image link -->
+    <a href="https://www.google.com" target="_blank">
+        <img src="google.webp" alt="Google Logo" width="400px" height="400px">
+    </a>
+
+    <!-- 
+    AUDIO Tags
+    <audio> : to embed sound content
+    Attributes of <audio> tag:
+    src        : to provide the source of the audio file (complusory)
+    type       : to specify the type of audio file (e.g., audio/mpeg, audio/ogg) (optional but recommended)
+    controls   : to display audio controls (play, pause, volume) (complusory)
+    autoplay   : to start playing the audio automatically (optional)
+    loop       : to play the audio in a loop (optional)
+    muted      : to mute the audio by default (optional)
+    -->
+
+    <h2>Audio Example</h2>
+    <audio controls muted loop>
+        Birds Chirping
+        <source src="birds-chirping.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- 
+    VIDEO Tags
+    <video> : to embed video content
+    Attributes of <video> tag:
+    src        : to provide the source of the video file (complusory)
+    type       : to specify the type of video file (e.g., video/mp4, video/webm) (optional but recommended)
+    controls   : to display video controls (play, pause, volume) (complusory)
+    autoplay   : to start playing the video automatically (optional)
+    loop       : to play the video in a loop (optional)
+    width      : to specify the width of the video (optional)
+    height     : to specify the height of the video (optional)
+    muted      : to mute the video by default (optional)
+    poster     : to specify an image to be shown while the video is downloading or until the user hits the play button (optional) (out of syllabus)
+    -->
+
+    <h2>Video Example</h2>
+    Special OPS Season 2 Episode 1 
+    <video width="1500px" height="800px" controls muted loop poster="Ghibli.png">
+        <source src="vid2.mkv" type="video/mp4">
+    </video>
+
+    <!-- 
+    IFRAME Tags
+    <iframe> : to embed another HTML page within the current page   
+    Attributes of <iframe> tag:
+    src             : to provide the source of the HTML page (complusory)
+    width           : to specify the width of the iframe (optional)
+    height          : to specify the height of the iframe (optional)
+    frameborder     : to specify whether the iframe should have a border (optional, values: "0" or "1")
+    allow           : to specify permissions for the iframe content (optional, e.g., "fullscreen", "autoplay")
+    allowfullscreen : to allow the iframe content to be displayed in fullscreen mode (optional)
+    style           : to apply inline CSS styles to the iframe (optional)
+    title           : to provide a title for the iframe (optional, improves accessibility)
+    -->
+
+    <h2>Iframe Example</h2>
+    <iframe src="https://en.wikipedia.org/wiki/Narendra_Modi" width="1400px" height="500px" frameborder="1"
+        allow="fullscreen" allowfullscreen title="MODI JI WIKI"></iframe>
+
+    <iframe width="1400px" height="800px" src="https://www.youtube.com/embed/Y4zd4Kl6-SY?si=JxgJPVmaXwj1VFnU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26319.81107504424!2d73.72300703109211!3d21.836485059883124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39601d55e43af21f%3A0xb8e23c01a1f6eb18!2sStatue%20Of%20Unity!5e1!3m2!1sen!2sin!4v1758344623831!5m2!1sen!2sin" width="1400" height="800" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+
+    <iframe src="Lec_1.html" width="1400px" height="600px" frameborder="1"
+        allow="fullscreen" allowfullscreen title="LECTURE 1"></iframe>
+</body>
+
+</html>

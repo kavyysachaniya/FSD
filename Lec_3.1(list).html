@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>HTML List</title>
+    <style>
+        body {
+            font-family:monospace;
+            font-weight:bolder;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+    -> Unordered List (ul)
+    Tags of Unordered List :
+    <ul>   : to provide bullets
+    <li>   : left margin and new line
+    -->
+
+    <!-- Four types of unordered list example and syntax are demonstrated below. -->
+
+    <h2>UNORDERED LIST</h2>
+    <ul> <!-- DISC default-->
+        <li>abc</li>
+        <li>pqr</li>
+    </ul><br>
+    <ul type="circle">
+        <li>abc</li>
+        <li>pqr</li>
+    </ul><br>
+    <ul type="square">
+        <li>abc</li>
+        <li>pqr</li>
+    </ul><br>
+    <ul type="none">
+        <li>abc</li>
+        <li>pqr</li>
+    </ul><br>
+
+    <!-- 
+    -> Ordered List (ol)
+    Tags of Unordered List :
+    <ol>   : to provide numbering
+    <li>   : left margin and new line
+    -->
+
+    <!-- Five type of ordered list example and syntax are demonstrated below. -->
+
+    <h2>ORDERED LIST</h2>
+    <ol> <!-- Default-->
+        <li>abc</li>
+        <li>pqr</li>
+        <li>xyz</li>
+    </ol><br>
+    <ol type="a">
+        <li>abc</li>
+        <li>pqr</li>
+        <li>xyz</li>
+    </ol><br>
+    <ol type="A">
+        <li>abc</li>
+        <li>pqr</li>
+        <li>xyz</li>
+    </ol><br>
+    <ol type="I">
+        <li>abc</li>
+        <li>pqr</li>
+        <li>xyz</li>
+    </ol><br>
+    <ol type="i">
+        <li>abc</li>
+        <li>pqr</li>
+        <li>xyz</li>
+    </ol><br>
+
+    <ol type="A" start="3">
+        <li>abc</li>
+        <li>pqr</li>
+        <li>xyz</li>
+    </ol><br>
+    
+    <ol type="A" start="3" reversed>
+        <li>abc</li>
+        <li>pqr</li>
+        <li>xyz</li>
+    </ol><br>
+
+    <ol type="A" start="27">
+        <li>abc</li>
+        <li>pqr</li>
+        <li>xyz</li>
+    </ol>
+    <br>
+
+    <h2>TASK</h2>
+    <ol type="1" start="5">
+        <li>Test1</li>
+        <li>Test2</li>
+        <li>Test3</li>
+        <ol type="A">
+            <li>Test4</li>
+            <li>Test5</li>
+            <ol type="i" reversed>
+                <li>Test6</li>
+                <li>Test7</li>
+            </ol>
+        </ol>
+    </ol>
+
+    <h2>TASK</h2>
+    <ol type="A" start="4">
+        <li>List1</li>
+        <li>List2</li>
+        <ul type="square">
+            <li>List 2.1</li>
+            <li>List 2.2</li>
+            <ol type="i" reversed>
+                <li>List 2.2.1</li>
+                <li>List 2.2.2</li>
+                <li>List 2.2.3</li>
+            </ol>
+        </ul>
+        <li>List3</li>
+        <ul type="none">
+            <li>List 3.1</li>
+            <li>List 3.2</li>
+        </ul>
+        <li>List4</li>
+        <ol type="a">
+            <li>List 4.1</li>
+            <ul type="circle">
+                <li>List 4.1.1</li>
+                <li>List 4.1.2</li>
+            </ul>
+            <li>List 4.2</li>
+        </ol>
+    </ol><br>
+
+    
+</body>
+</html>

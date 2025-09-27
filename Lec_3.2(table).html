@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HTML Table</title>
+    <style>
+        body{
+            font-family: monospace;
+        } 
+        th{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+    TABLE ELEMENTS:
+    - <table>     : Main container for the table (required)
+    - <caption>   : Table title or caption (optional)
+    - <thead>     : Container for header rows (optional)
+    - <tbody>     : Container for body rows (optional)
+    - <tfoot>     : Container for footer rows (optional)
+    - <tr>        : Table row (required)
+    - <th>        : Header cell (bold and centered by default)
+    - <td>        : Standard data cell
+
+    TABLE ATTRIBUTES (mostly deprecated; use CSS instead):
+    - align       : Alignment of the table (left, right, center)
+    - bgcolor     : Background color (color name, hex, or rgb)
+    - cellpadding : Space between cell content and cell border
+    - cellspacing : Space between cells
+    - border      : Table border thickness
+    - rules       : Specifies which internal borders to display:
+        * all    : Show all internal borders
+        * none   : No internal borders
+        * rows   : Borders between rows only
+        * cols   : Borders between columns only
+        * groups : Borders between groups only
+
+    <tr>, <th>, <td> ATTRIBUTES:
+    - align       : Text alignment (left, right, center)
+    - bgcolor     : Background color
+    - rowspan     : Number of rows a cell should span (merge rows)
+    - colspan     : Number of columns a cell should span (merge columns)
+    -->
+
+    <h2>BASIC EXAMPLE OF TABLE</h2>
+    <h3>TABLE 1</h3>
+    <table border="1" rules="all">
+        <tr>
+            <td>a</td>
+            <td>b</td>
+        </tr>
+        <tr>
+            <td>c</td>
+            <td>d</td>
+        </tr>
+    </table><br>
+
+    <h3>TABLE 2</h3>
+    <table border="1" cellspacing="4">
+        <tr>
+            <td>a</td>
+            <td>b</td>
+        </tr>
+        <tr>
+            <td>c</td>
+            <td>d</td>
+        </tr>
+    </table><br>
+
+    <h3>TABLE 3</h3>
+    <table border="1" cellspacing="4" cellspading="4">
+        <tr>
+            <td>a</td>
+            <td>b</td>
+        </tr>
+        <tr>
+            <td>c</td>
+            <td>d</td>
+        </tr>
+    </table><br>
+
+    <h3>TABLE 4</h3>
+    <table border="1" rules="rows">
+        <tr>
+            <td>a</td>
+            <td>b</td>
+            <td>c</td>
+        </tr>
+        <tr>
+            <td>d</td>
+            <td>e</td>
+            <td>f</td>
+        </tr>
+    </table> <br>
+
+    <h3>TABLE 5</h3>
+    <table border="1">
+        <caption>Info</caption>
+        <thead>
+            <tr>
+                <th>Month</th>
+                <th>Cost</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Jan</td>
+                <td>5000</td>
+            </tr>
+            <tr>
+                <td>Feb</td>
+                <td>6000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total</th>
+                <th>11000</th>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h3>TABLE 6</h3>
+    <table border="1">
+        <tr>
+            <td colspan="2">a</td>
+        </tr>
+        <tr>
+            <td>b</td>
+            <td>c</td>
+        </tr>
+    </table><br>
+
+    <h3>TABLE 6</h3>
+    <table border="1">
+        <tr>
+            <td>a</td>
+            <td rowspan="2">b</td>
+        </tr>
+        <tr>
+            <td>c</td>
+        </tr>
+    </table><br>
+
+    <h3>TABLE 7</h3>
+    <table border="1" rules="all">
+        <tr>
+            <th rowspan="2" colspan="1"><h2>🥗</h2></th>
+            <th colspan="4"> Nutrition Info</th>
+        </tr>
+        <tr>
+            <th>Cal</th>
+            <th>Carbs</th>
+            <th>Protein</th>
+            <th>Fiber</th>
+        </tr>
+        <tr>
+            <td>Apple</td>
+            <td>80</td>
+            <td>22G</td>
+            <td>0G</td>
+            <td>5G</td>
+        </tr>
+        </tr>
+        <tr>
+            <td>Peach</td>
+            <td>40</td>
+            <td>10G</td>
+            <td>0.6G</td>
+            <td>1.5G</td>
+        </tr>
+        </tr>
+        <tr>
+            <td>Plums</td>
+            <td>60</td>
+            <td>8.6G</td>
+            <td>0.52</td>
+            <td>1G</td>
+        </tr>
+    </table><br>
+
+    <h3>TABLE 8</h3>
+    <table border="1" rules="all">
+        <tr>
+            <th>Position</th>
+            <th>Name</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>
+                <ul type="none">
+                    <li>Sales</li>
+                    <li>Manager</li>
+                </ul>
+            </td>
+            <td>
+                <ol type="i">
+                    <li>abc</li>
+                    <li>pqr</li>
+                </ol>
+            </td>
+            <td>
+                <ul type="circle">
+                    <li>India</li>
+                    <li>USA</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
